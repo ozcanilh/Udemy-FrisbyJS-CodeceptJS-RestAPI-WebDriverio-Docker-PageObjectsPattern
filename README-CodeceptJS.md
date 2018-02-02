@@ -19,6 +19,7 @@ npm install selenium-standalone@latest
 selenium-standalone install
 npm install co
 ```
+***After "npm install selenium-standalone" in local path, drivers may not be available. For this scenario; please add ".selenium" file which is in project, in \\node_modules\selenium-standalone path ***
 
 ### CodeceptJS - Change Global and Local Env. 
 For Local Installation add parameter --dev-save to npm
