@@ -67,7 +67,7 @@ Add below parameter in codecept.json file
 - Type 192.168.99.100.5900 in VNC Server for Chrome , Password: secret, Connect it 
 - Execute "runStepsMultipleDocker" in package.json file
 
-##Project 1 - Test 3
+## Project 1 - Test 3
 - Before test execution . Please set current Yamaha product count in project1_test.js . Because count may change daybyday
 
 
