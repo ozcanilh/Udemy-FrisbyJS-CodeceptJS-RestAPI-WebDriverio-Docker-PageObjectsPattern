@@ -1,0 +1,36 @@
+{
+  "name": "udemyproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "selenium": "selenium-standalone start",
+    "codeceptjs": "codeceptjs run --steps",
+    "runStepsMultipleDocker": "codeceptjs run-multiple basic",
+    "runStepsLocalMultipleBrowser": "npm-run-all -p -r selenium runStepsMultipleDocker",
+    "runStepsChromeBrowser": "npm-run-all -p -r selenium codeceptjs",
+    "runApiTestJasmine": "./node_modules/.bin/jasmine-node spec",
+    "runApiTestJest": "node ./node_modules/jest-cli/bin/jest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "codeceptjs": "^1.1.1",
+    "jasmine": "^2.9.0",
+    "jsonschema": "^1.2.2",
+    "minimatch": "^3.0.2",
+    "npm": "^5.6.0",
+    "request": "^2.83.0",
+    "selenium-standalone": "^6.12.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "webdriverio": "^4.10.1"
+  },
+  "devDependencies": {
+    "frisby": "^2.0.11",
+    "jasmine-node": "^1.14.5",
+    "jest": "^22.1.4",
+    "jest-cli": "^22.1.4",
+    "npm-run-all": "^4.1.2"
+  }
+}

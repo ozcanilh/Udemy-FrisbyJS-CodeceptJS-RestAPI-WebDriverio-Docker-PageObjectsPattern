@@ -1,0 +1,42 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://www.sahibinden.com",    
+      "windowSize": "maximize",
+      "browser": "chrome",
+      "timeouts": {
+         "script": 60000,
+         "page load": 30000
+       },  
+        "desiredCapabilities": {
+        "chromeOptions": {     
+          "args": [
+            "--disable-gpu",
+            "--disable-infobars",
+            "--disable-extensions",
+            "--disable-notifications",
+            "--start-maximized",
+            "--disable-web-security",
+            "--enable-automation",
+            "--disable-save-password-bubble"
+          ]
+        }
+      }           
+    }},
+  "multiple": {
+   "basic": {
+    "browsers": ["chrome", "firefox"]
+  }},
+  "include": {
+    "I": "./steps_file.js",
+    "pageObjectPage": "./pages/pageObject.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "name": "udemyProject"
+}
