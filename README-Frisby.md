@@ -11,16 +11,23 @@ These instructions will get you a copy of the project up and running on your loc
 ### Frisby-Global Env Installation.
 
 ```javascript 
-npm install frisby@2.0.5 
+npm install jasmine
 npm install jasmine-node 
 npm install jsonschema 
 npm install content-type
 npm install jest
+npm install jest-cli
+npm install request
+npm install frisby@2.0.5 
+npm install body-parser
 ```
 
 ### FrisbyJS - Change Global and Local Env. 
 For Local Installation add parameter --dev-save to npm
 For Global Installation add parameter -g to npm
+
+** If you dont want to install all package with manually or script , package-lock.json file is available in project. Need to just npm-install
+** If you want to install all package manually or script , please check and run frisby.sh. Before run these script , you should delete package-lock.json in project
 
 ### FrisbyJS - Running
 * After installation:
