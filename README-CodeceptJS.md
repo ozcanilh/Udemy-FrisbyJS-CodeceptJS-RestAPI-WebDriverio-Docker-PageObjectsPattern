@@ -11,24 +11,27 @@ These instructions will get you a copy of the project up and running on your loc
 ### CodeceptJS - Installation.
 
 ```javascript 
+npm install npm-run-all
 npm install codeceptjs@1.1.1 
 npm install webdriverio 
 npm install selenium-webdriver 
 npm install selenium-standalone@latest 
 selenium-standalone install
-selenium-standalone start
 npm install co
 ```
 
-###CodeceptJS - Change Global and Local Env. 
+### CodeceptJS - Change Global and Local Env. 
 For Local Installation add parameter --dev-save to npm
 For Global Installation add parameter -g to npm
 
-##For One Browser Run
+** If you dont want to install all package with manually or script , package-lock.json file is available in project. Need to just npm-install
+** If you want to install all package manually or script , please check and run codecept.sh. Before run these script , you should delete package-lock.json in project
+
+## For One Browser Run
 
 - Execute "runStepsChromeBrowser" in package.json file
 
-##For Multiple Browser Run (Chrome,Firefox)
+## For Multiple Browser Run (Chrome,Firefox)
 
 - Delete "desiredCapabilities", "chromeOptions", "args", "host", "port", "method" parameters in codecept.json file 
 - Execute "runStepsLocalMultipleBrowser" in package.json file
@@ -38,13 +41,13 @@ For Global Installation add parameter -g to npm
 * Helper Tools for Docker: (Not needed these tools but useful for management Docker)
 Install Docker Quickstart Terminal, Kitematic
 
-###Docker Compose File
+### Docker Compose File
 In docker-compose.yml file
 Chrome and Firefox hub link to node .
 Session and Instance of hub set to 5
 Ports for Browsers: Chrome: 5900 Firefox: 5901 settings are available
 
-###For Docker Run
+### For Docker Run
 
 * Default codecept.json file running on chrome browser. For docker multiple browser and hub please add new parameter.
 
@@ -66,7 +69,6 @@ Add below parameter in codecept.json file
 
 ##Project 1 - Test 3
 - Before test execution . Please set current Yamaha product count in project1_test.js . Because count may change daybyday
-
 
 
 
