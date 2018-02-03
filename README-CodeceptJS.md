@@ -19,11 +19,12 @@ npm install selenium-standalone@latest
 selenium-standalone install
 npm install co
 ```
-***After "npm install selenium-standalone" in local path, drivers may not be available. For this scenario; please add ".selenium" file which is in project, in \\node_modules\selenium-standalone path ***
+For Locally Specific Path
+***After "selenium-standalone install" , drivers may not be available in locally path. For this scenario; please copy ".selenium" file which is in globally env in %User%\AppData\Roaming\npm\node_modules\selenium-standalone path, and paste it your locally path ***
 
-### CodeceptJS - Change Global and Local Env. 
-For Local Installation add parameter --dev-save to npm
-For Global Installation add parameter -g to npm
+### CodeceptJS - Change Globally and Locally Env. 
+For Locally Installation add parameter --dev-save to npm
+For Globally Installation add parameter -g to npm
 
 ** If you dont want to install all package with manually or script , package-lock.json file is available in project. Need to just npm-install
 ** If you want to install all package manually or script , please check and run codecept.sh. Before run these script , you should delete package-lock.json in project
